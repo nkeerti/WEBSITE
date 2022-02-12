@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+  
+}
+body{
+    background-image: url(image.jpg);
+    justify-content: center;  
+    font-family: "Poppins",sans-serif;
+}
+.form{
+       
+    justify-content: center;
+    overflow: auto;
+    background-color: aliceblue;
+    height: 400px;
+    width:400px;
+    margin-top: 10%;
+    margin-left:40%;
+    margin-right:100%;
+    padding:5px 20px;
+  
+    
+    border:1px solid rgb(61,53,53);
+    border-radius:5px;
+    display: flex;
+    flex-flow:  wrap;    
+    flex-wrap: wrap;
+
+}
+h1{
+ color:azure;
+ text-align: center;
+
+        
+}
+.form-inputs {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.heading{
+    font-size:30px;
+    text-align: center;
+    display: block;
+    
+}
+
+input[type=text], input[type=password] {
+  
+  display: inline-block;
+  border: 3px;
+  border-color: blue;
+  height: 40px;
+  width: 300px;
+  align-items: flex-end;
+}
+button{
+    text-align: center;
+    font-size: 13px;
+    align-content: center;
+    cursor: pointer;
+ }
+

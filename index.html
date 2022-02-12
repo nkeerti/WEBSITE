@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>  
+function verifyPassword() {  
+  var pw = document.getElementById("password").value;   var name = document.getElementById("username").value;
+   
+
+    if(pw == "" && name=="" ) {  
+      document.getElementById("message").innerHTML = "Fill the username and password";  
+     return false;   
+   }
+  if(pw == "") {  
+     document.getElementById("message").innerHTML = "Fill the password!";  
+     return false;  
+  } else if(name==""){
+      document.getElementById("message").innerHTML = "Fill the username!";  
+     return false;  
+  }
+   
+  if(pw.length < 8) {  
+     document.getElementById("message").innerHTML = "length must be atleast 8 characters";  
+     return false;  
+  }     
+  if(pw.length > 15) {  
+     document.getElementById("message").innerHTML = "length must not exceed 15 characters";  
+     return false;  
+  } else {  
+     alert("Password is correct");  
+  } 
+    
+}  
+</script>    
+    </head>
+<body>
+    <h1>WELCOME</h1>
+    <hr>
+    <form class="form" onsubmit ="return verifyPassword()">
+    
+    <div class="form-inputs">
+        <table>
+           
+     <h2 class="heading">SIGNUP</h2>
+        <tr><input type="text" name="username" id="username"  placeholder="Username"  ><br><br></tr>
+       
+       <tr> <input type="password" name="pass" id="password" placeholder="Password"><br><br></tr>
+      <tr><span id = "message" style="color:red"> </span> <br><br> </tr>
+        <tr><input type="submit" name="submit" value="Submit"  ><br><br></tr>
+            </table>
+        </div>
+    
+    </form>
+ 
+    </body>
+
+</html>
